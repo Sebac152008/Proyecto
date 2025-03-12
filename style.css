@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*::selection{
+    background: #f2ff02b1;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+nav{
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 50px #8f8f8f;
+}
+
+nav ul{
+    text-align: center;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 15px;
+    padding-bottom: 5px; /* Espacio para la línea */
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #333;
+    transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+img[alt="Logo del ITFAM"]{
+    width: 200px;
+    padding: 20px 20px;
+}
+img[alt="Usuario"]{
+    width: 50px;
+}
